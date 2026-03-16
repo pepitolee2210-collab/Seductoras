@@ -44,9 +44,9 @@ export default function AgeGate() {
               <Image
                 src="/logo.png"
                 alt="Seductoras"
-                width={160}
-                height={56}
-                className="h-14 w-auto object-contain"
+                width={240}
+                height={88}
+                className="h-24 w-auto object-contain"
                 priority
               />
             </div>

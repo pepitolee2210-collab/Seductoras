@@ -25,9 +25,9 @@ export default function Footer() {
               <Image
                 src="/logo.png"
                 alt="Seductoras"
-                width={140}
-                height={48}
-                className="h-12 w-auto object-contain"
+                width={220}
+                height={80}
+                className="h-20 w-auto object-contain"
               />
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-text-muted">

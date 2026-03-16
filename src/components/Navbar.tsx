@@ -26,9 +26,9 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="Seductoras"
-            width={140}
-            height={48}
-            className="h-10 w-auto object-contain"
+            width={200}
+            height={64}
+            className="h-14 w-auto object-contain"
             priority
           />
         </Link>
