@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ShieldCheck } from "lucide-react";
 
@@ -39,8 +40,19 @@ export default function AgeGate() {
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
             className="relative w-full max-w-md rounded-2xl border border-dark-600 bg-dark-800 p-8 text-center shadow-2xl"
           >
-            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-brand-400 to-brand-600">
-              <ShieldCheck className="h-8 w-8 text-white" />
+            <div className="mx-auto mb-6 flex justify-center">
+              <Image
+                src="/logo.png"
+                alt="Seductoras"
+                width={160}
+                height={56}
+                className="h-14 w-auto object-contain"
+                priority
+              />
+            </div>
+
+            <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-brand-400 to-brand-600">
+              <ShieldCheck className="h-6 w-6 text-white" />
             </div>
 
             <h2 className="mb-2 font-display text-2xl font-bold text-gradient-brand">

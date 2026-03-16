@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Heart } from "lucide-react";
 
 const LINKS_EXPLORE = [
@@ -20,8 +21,14 @@ export default function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="font-display text-2xl font-bold text-gradient-brand">
-              Seductoras
+            <Link href="/" className="inline-block">
+              <Image
+                src="/logo.png"
+                alt="Seductoras"
+                width={140}
+                height={48}
+                className="h-12 w-auto object-contain"
+              />
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-text-muted">
               El directorio de acompañantes más exclusivo de Colombia. Perfiles

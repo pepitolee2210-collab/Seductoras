@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown, MapPin } from "lucide-react";
 import { FILTER_CITIES } from "@/lib/mock-data";
@@ -21,10 +22,15 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-dark-700/50 bg-dark-900/85 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <span className="font-display text-2xl font-bold text-gradient-brand">
-            Seductoras
-          </span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="Seductoras"
+            width={140}
+            height={48}
+            className="h-10 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}
